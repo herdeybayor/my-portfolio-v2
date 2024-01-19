@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import underConstruction from "../images/under-construction.png";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <div class="under-construction">
+            <Image src={underConstruction} alt="Under Construction" width="300" height="300" />
+            <p>I am currently working hard to bring you something awesome. Stay tuned!</p>
+        </div>
+    </body>
+</html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+
+    .under-construction {
+        text-align: center;
+    }
+
+    p {
+        color: #666;
+    }
+</style>
